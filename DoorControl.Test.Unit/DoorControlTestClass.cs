@@ -22,7 +22,7 @@ namespace DoorControlTest.Unit
             _FakeDoor = Substitute.For<IDoor>();
             _FakeUserValidation = Substitute.For<IUserValidation>();
 
-            _uut =  new DoorControl(_FakeDoor, _FakeUserValidation);
+            _uut =  new DoorControl(_FakeDoor,_FakeUserValidation);
         }
 
         [Test]
