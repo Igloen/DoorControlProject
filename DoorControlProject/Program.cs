@@ -10,6 +10,8 @@ namespace DoorControlProject
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hej");
+            Console.ReadKey();
         }
     }
 }
