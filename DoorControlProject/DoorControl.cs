@@ -11,6 +11,11 @@ namespace DoorControlProject
         private IDoor _door;
         private IUserValidation _userValidation;
 
+        public DoorControl(IDoor door, IUserValidation userValidation)
+        {
+            _door = door;
+            _userValidation = userValidation;
+        }
 
         public void RequestEntry(int id)
         {
