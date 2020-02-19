@@ -35,7 +35,15 @@ namespace DoorControlTest.Unit
             _FakeDoor.Received(1).Open();
         }
 
+        [Test]
+        public void EntryIdTestFalse()
+        {
+            _FakeUserValidation.ValidateEntryRequest(1234).Returns(true);
 
+            _uut.RequestEntry(8790);
+
+            _FakeDoor.Received(0).Open();
+        }
 
     }
 }
