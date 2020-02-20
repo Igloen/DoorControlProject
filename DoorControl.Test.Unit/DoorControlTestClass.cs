@@ -25,6 +25,8 @@ namespace DoorControlTest.Unit
             _uut =  new DoorControl(_FakeDoor,_FakeUserValidation);
         }
 
+        // Test for valid ID = ok. 
+
         [Test]
         public void EntryIdTest()
         {
@@ -34,6 +36,8 @@ namespace DoorControlTest.Unit
 
             _FakeDoor.Received(1).Open();
         }
+
+        // Test for valid ID = not ok (Exception 1)
 
         [Test]
         public void EntryIdTestFalse()
@@ -45,5 +49,12 @@ namespace DoorControlTest.Unit
             _FakeDoor.Received(0).Open();
         }
 
+        // Test for door breached (Exception 2)
+
+        [Test]
+        public void DoorBreached()
+        {
+            
+        }
     }
 }

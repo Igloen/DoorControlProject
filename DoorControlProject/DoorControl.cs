@@ -30,7 +30,15 @@ namespace DoorControlProject
             _door.Close();
         }
 
-        public void DoorClosed() { }
+        public void DoorClosed()
+        {
+
+        }
+
+        public void RaiseAlarm()
+        {
+            
+        }
 
 
 
